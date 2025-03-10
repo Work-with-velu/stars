@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <header>
+    <header>
         <div class="navbar">
             <h1>PornHub</h1>
-            <ul>
+            <button class="menu-toggle">☰</button>
+            <ul class="nav-menu">
                 <li><a class="nav" href="#">Home</a></li>
                 <li><a class="nav" href="#">Categories</a></li>
                 <li><a class="nav" href="#">Stars</a></li>
@@ -20,7 +21,6 @@
         </div>
     </header>
     <div class="container">
-        <!-- Product 1 -->
         <div class="outerbox">
             <div class="main">
                 <div class="product">
@@ -28,7 +28,7 @@
                 </div>
                 <div class="details">
                     <div class="title">Moodu Magesh</div>
-                    <p class="description">Magesh also known as is Thiruvannamalai Tevidiya, is a famous porn star with over 100 body count!!</p>
+                    <p class="description">Magesh also known as Thiruvannamalai Tevidiya...</p>
                     <div class="price">₹2</div>
                     <div class="buynow">
                         <button>Watch Now</button>
@@ -37,51 +37,19 @@
                 </div>
             </div>
         </div>
-
-        <!-- Product 2 -->
-        <div class="outerbox">
-            <div class="main">
-                <div class="product">
-                    <img src="./karthi.jpg" alt="Kandroll karthi">
-                </div>
-                <div class="details">
-                    <div class="title">Kattakunju karthi</div>
-                    <p class="description">Karthi...The legend with his hidden katta kunju which can expand upto 10 inches...is a powerful porn star with a countless body count...</p>
-                    <div class="price">Not for Sale</div>
-                    <div class="buynow">
-                        <button>Watch now</button>
-                        <button>Subscribe</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Product 3 -->
-        <div class="outerbox">
-            <div class="main">
-                <div class="product">
-                    <img src="./ol.jpg" alt="Olan">
-                </div>
-                <div class="details">
-                    <div class="title">Olnaatan Prithivi</div>
-                    <p class="description">Feared by many, this brutal guy rapes everyone's ears...There's a famous song => OL OL OL ol naataan vandhaa ol ol ol...</p>
-                    <div class="price">Free</div>
-                    <div class="buynow">
-                        <button>Buy Now</button>
-                        <button>Watch or Subscribe</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-<div></div>
     </div>
-
     <footer>
         <div class="contact">
-            <address>#99,Kilambakkam bus stand</address> <address>TN-603210</address>
+            <address>#99, Kilambakkam bus stand</address>
+            <address>TN-603210</address>
             <a id="num" href="#"><i>99999 99999</i></a>
         </div>
-        <div class="contact" style="margin-top:3px;font-weight:bold;">&copy ECE dept 2025</div></div>
+        <div class="contact" style="margin-top:3px;font-weight:bold;">&copy; ECE dept 2025</div>
     </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
